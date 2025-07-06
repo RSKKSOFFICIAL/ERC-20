@@ -1,66 +1,53 @@
-## Foundry
+# ERC-20 Token Project with Foundry
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A simple and efficient ERC-20 token implementation using [Foundry](https://book.getfoundry.sh/) for development, testing, and deployment.
 
-Foundry consists of:
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## 🔨 Installation
 
-## Documentation
+Make sure you have [Foundry installed](https://book.getfoundry.sh/getting-started/installation.html):
 
-https://book.getfoundry.sh/
+```bash
+curl -L https://foundry.paradigm.xyz | bash
+foundryup
+````
 
-## Usage
+Clone the repo and install dependencies:
 
-### Build
-
-```shell
-$ forge build
+```bash
+git clone https://github.com/RSKKSOFFICIAL/ERC-20.git
+cd ERC-20
+make install
 ```
 
-### Test
+## 🚀 Deployment
 
-```shell
-$ forge test
+Update your `.env` with your private key:
+
+```env
+PRIVATE_KEY=your_private_key_here
 ```
 
-### Format
+Run the deploy script:
 
-```shell
-$ forge fmt
+```bash
+make deploy
 ```
 
-### Gas Snapshots
+## 🧪 Testing
 
-```shell
-$ forge snapshot
+Run unit tests:
+
+```bash
+make test
 ```
 
-### Anvil
+## 📄 License
 
-```shell
-$ anvil
-```
+MIT
 
-### Deploy
+---
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+Built with ❤️ using Foundry.
 
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
 ```
