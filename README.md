@@ -22,10 +22,12 @@ make install
 
 ## 🚀 Deployment
 
-Update your `.env` with your private key:
+Update your `.env`:
 
 ```env
-PRIVATE_KEY=your_private_key_here
+PRIVATE_KEY=XXXXXXXXX
+RPC_URL=http://0.0.0.0:8545
+ETHERSCAN_API_KEY=XXXX
 ```
 
 Run the deploy script:
@@ -45,9 +47,4 @@ make test
 ## 📄 License
 
 MIT
-
----
-
 Built with ❤️ using Foundry.
-
-```
